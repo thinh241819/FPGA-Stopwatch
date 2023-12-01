@@ -1,0 +1,9 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+E:/CSM152/Lab_3/Official_Project/Lab3/Lab3.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+E:/CSM152/Lab_3/Official_Project/Lab3/Lab3.srcs/sim_1/new/tb_counter_9.v,1699687057,verilog,,,,tb_counter_9,,,,,,,,
+E:/CSM152/Lab_3/Official_Project/Lab3/Lab3.srcs/sim_1/new/tb_test_display.v,1699788917,verilog,,,,tb_test_display,,,,,,,,
+E:/CSM152/Lab_3/Official_Project/Lab3/Lab3.srcs/sources_1/new/counter_9.v,1699691037,verilog,,E:/CSM152/Lab_3/Official_Project/Lab3/Lab3.srcs/sim_1/new/tb_counter_9.v,,counter_9,,,,,,,,
+E:/CSM152/Lab_3/Official_Project/Lab3/Lab3.srcs/sources_1/new/test_display.v,1699790322,verilog,,E:/CSM152/Lab_3/Official_Project/Lab3/Lab3.srcs/sim_1/new/tb_test_display.v,,test_display,,,,,,,,

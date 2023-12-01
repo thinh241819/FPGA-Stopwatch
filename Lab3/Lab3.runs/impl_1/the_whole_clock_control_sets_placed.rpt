@@ -1,0 +1,88 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Mon Nov 13 01:19:08 2023
+| Host         : DESKTOP-TMLOJI9 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file the_whole_clock_control_sets_placed.rpt
+| Design       : the_whole_clock
+| Device       : xc7a35t
+--------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    20 |
+| Unused register locations in slices containing registers |    52 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            4 |
+|      4 |            4 |
+|      8 |            4 |
+|     10 |            2 |
+|    16+ |            6 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              10 |            3 |
+| No           | No                    | Yes                    |              58 |            8 |
+| No           | Yes                   | No                     |             134 |           23 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |             202 |           26 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------+-------------------------+---------------------------------+------------------+----------------+
+|       Clock Signal      |      Enable Signal      |         Set/Reset Signal        | Slice Load Count | Bel Load Count |
++-------------------------+-------------------------+---------------------------------+------------------+----------------+
+|  COUNTER_2ND_DIGIT/E[1] |                         | COUNTER_2ND_DIGIT/AR[1]         |                1 |              2 |
+|  COUNTER_4TH_DIGIT/E[1] |                         | COUNTER_4TH_DIGIT/AR[1]         |                1 |              2 |
+|  COUNTER_1ST_DIGIT/E[1] |                         | COUNTER_1ST_DIGIT/AR[1]         |                1 |              2 |
+|  COUNTER_3RD_DIGIT/E[1] |                         | COUNTER_3RD_DIGIT/AR[1]         |                1 |              2 |
+|  COUNTER_2ND_DIGIT/E[0] |                         | COUNTER_2ND_DIGIT/AR[0]         |                1 |              4 |
+|  COUNTER_4TH_DIGIT/E[0] |                         | COUNTER_4TH_DIGIT/AR[0]         |                1 |              4 |
+|  COUNTER_1ST_DIGIT/E[0] |                         | COUNTER_1ST_DIGIT/AR[0]         |                1 |              4 |
+|  COUNTER_3RD_DIGIT/E[0] |                         | COUNTER_3RD_DIGIT/AR[0]         |                1 |              4 |
+|  COUNTER_2ND_DIGIT/E[2] |                         | COUNTER_2ND_DIGIT/AR[2]         |                1 |              8 |
+|  COUNTER_4TH_DIGIT/E[2] |                         | COUNTER_4TH_DIGIT/AR[2]         |                1 |              8 |
+|  COUNTER_1ST_DIGIT/E[2] |                         | COUNTER_1ST_DIGIT/AR[2]         |                1 |              8 |
+|  COUNTER_3RD_DIGIT/E[2] |                         | COUNTER_3RD_DIGIT/AR[2]         |                1 |              8 |
+|  count_reg[0]_i_3_n_0   | BTN_SW/sel              | BTN_SW/reset                    |                2 |             10 |
+|  clk_IBUF_BUFG          |                         |                                 |                3 |             10 |
+|  clk_IBUF_BUFG          |                         | DISPLAY/digit_timer[16]_i_1_n_0 |                4 |             32 |
+|  clk_IBUF_BUFG          |                         | BTNR_IBUF                       |                8 |             48 |
+|  clk_IBUF_BUFG          |                         | BTN_SW/reset                    |                7 |             56 |
+|  count_reg[0]_i_3_n_0   | COUNTER_2ND_DIGIT/count | BTN_SW/reset                    |                8 |             64 |
+|  count_reg[0]_i_3_n_0   | COUNTER_1ST_DIGIT/count | BTN_SW/reset                    |                8 |             64 |
+|  count_reg[0]_i_3_n_0   | COUNTER_3RD_DIGIT/count | BTN_SW/reset                    |                8 |             64 |
++-------------------------+-------------------------+---------------------------------+------------------+----------------+
+
+

@@ -1,0 +1,96 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Mon Nov 13 01:19:43 2023
+| Host         : DESKTOP-TMLOJI9 running 64-bit major release  (build 9200)
+| Command      : report_drc -file the_whole_clock_drc_routed.rpt -pb the_whole_clock_drc_routed.pb -rpx the_whole_clock_drc_routed.rpx
+| Design       : the_whole_clock
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 12
++----------+----------+-------------------+------------+
+| Rule     | Severity | Description       | Violations |
++----------+----------+-------------------+------------+
+| PDRC-153 | Warning  | Gated clock check | 12         |
++----------+----------+-------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+PDRC-153#1 Warning
+Gated clock check  
+Net COUNTER_1ST_DIGIT/E[0] is a gated clock net sourced by a combinational pin COUNTER_1ST_DIGIT/encode_result_reg[4]_i_2/O, cell COUNTER_1ST_DIGIT/encode_result_reg[4]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net COUNTER_1ST_DIGIT/E[1] is a gated clock net sourced by a combinational pin COUNTER_1ST_DIGIT/encode_result_reg[5]_i_2/O, cell COUNTER_1ST_DIGIT/encode_result_reg[5]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net COUNTER_1ST_DIGIT/E[2] is a gated clock net sourced by a combinational pin COUNTER_1ST_DIGIT/encode_result_reg[6]_i_2/O, cell COUNTER_1ST_DIGIT/encode_result_reg[6]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#4 Warning
+Gated clock check  
+Net COUNTER_2ND_DIGIT/E[0] is a gated clock net sourced by a combinational pin COUNTER_2ND_DIGIT/encode_result_reg[4]_i_2__2/O, cell COUNTER_2ND_DIGIT/encode_result_reg[4]_i_2__2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#5 Warning
+Gated clock check  
+Net COUNTER_2ND_DIGIT/E[1] is a gated clock net sourced by a combinational pin COUNTER_2ND_DIGIT/encode_result_reg[5]_i_2__0/O, cell COUNTER_2ND_DIGIT/encode_result_reg[5]_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#6 Warning
+Gated clock check  
+Net COUNTER_2ND_DIGIT/E[2] is a gated clock net sourced by a combinational pin COUNTER_2ND_DIGIT/encode_result_reg[6]_i_2__2/O, cell COUNTER_2ND_DIGIT/encode_result_reg[6]_i_2__2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#7 Warning
+Gated clock check  
+Net COUNTER_3RD_DIGIT/E[0] is a gated clock net sourced by a combinational pin COUNTER_3RD_DIGIT/encode_result_reg[4]_i_2__0/O, cell COUNTER_3RD_DIGIT/encode_result_reg[4]_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#8 Warning
+Gated clock check  
+Net COUNTER_3RD_DIGIT/E[1] is a gated clock net sourced by a combinational pin COUNTER_3RD_DIGIT/encode_result_reg[5]_i_2__1/O, cell COUNTER_3RD_DIGIT/encode_result_reg[5]_i_2__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#9 Warning
+Gated clock check  
+Net COUNTER_3RD_DIGIT/E[2] is a gated clock net sourced by a combinational pin COUNTER_3RD_DIGIT/encode_result_reg[6]_i_2__0/O, cell COUNTER_3RD_DIGIT/encode_result_reg[6]_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#10 Warning
+Gated clock check  
+Net COUNTER_4TH_DIGIT/E[0] is a gated clock net sourced by a combinational pin COUNTER_4TH_DIGIT/encode_result_reg[4]_i_2__1/O, cell COUNTER_4TH_DIGIT/encode_result_reg[4]_i_2__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#11 Warning
+Gated clock check  
+Net COUNTER_4TH_DIGIT/E[1] is a gated clock net sourced by a combinational pin COUNTER_4TH_DIGIT/encode_result_reg[5]_i_2__2/O, cell COUNTER_4TH_DIGIT/encode_result_reg[5]_i_2__2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#12 Warning
+Gated clock check  
+Net COUNTER_4TH_DIGIT/E[2] is a gated clock net sourced by a combinational pin COUNTER_4TH_DIGIT/encode_result_reg[6]_i_2__1/O, cell COUNTER_4TH_DIGIT/encode_result_reg[6]_i_2__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+
